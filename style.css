@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC",
+    "Microsoft YaHei", sans-serif;
+  background: linear-gradient(160deg, #fdf2f8 0%, #eef2ff 100%);
+  color: #1f2430;
+}
+
+.card {
+  width: 100%;
+  max-width: 380px;
+  padding: 32px 24px 28px;
+  background: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 12px 36px rgba(53, 60, 90, 0.12);
+  text-align: center;
+}
+
+h1 {
+  font-size: 21px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.subtitle {
+  margin-top: 10px;
+  font-size: 13px;
+  line-height: 1.6;
+  color: #8b90a0;
+}
+
+.counter {
+  margin: 26px 0 24px;
+  font-size: 76px;
+  font-weight: 700;
+  line-height: 1;
+  font-variant-numeric: tabular-nums;
+  color: #e0507a;
+  transition: transform 0.12s ease;
+}
+
+.counter.pop {
+  transform: scale(1.12);
+}
+
+.buttons {
+  display: flex;
+  gap: 12px;
+}
+
+.btn {
+  flex: 1;
+  padding: 14px 0;
+  font-size: 17px;
+  font-weight: 600;
+  color: #4a4f60;
+  background: #f2f3f7;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background 0.15s ease, transform 0.08s ease;
+}
+
+.btn:active {
+  transform: scale(0.96);
+}
+
+.btn:hover {
+  background: #e8eaf1;
+}
+
+.btn-primary {
+  color: #ffffff;
+  background: #e0507a;
+}
+
+.btn-primary:hover {
+  background: #d0416c;
+}
+
+.btn-reset {
+  margin-top: 14px;
+  padding: 9px 20px;
+  font-size: 13px;
+  color: #8b90a0;
+  background: transparent;
+  border: 1px solid #e3e5ec;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.btn-reset:hover {
+  color: #4a4f60;
+  border-color: #cfd3de;
+}
+
+.hint {
+  margin-top: 18px;
+  font-size: 12px;
+  color: #a8adbb;
+  min-height: 16px;
+}
